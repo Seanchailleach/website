@@ -22,8 +22,10 @@ a:active {
   text-decoration: underline;
 }
 </style>
+
 <TITLE>Welcome to the home of the Weather Witch</TITLE>
 </HEAD>
+
 <BODY bgcolor="black">
 <center>
 <font type="Georgia" size=7 color="white">
@@ -46,9 +48,56 @@ signs of nature to predict the weather. I don’t think it’s an either/or; “
 and hopefully frequent, updates. I promise pics and prettiness and witchy nature stuff in the future! But for now, I plan to plug along a bit 
 every day.</p>
 <br><br>
-<p> A little taste of my local (as in, "literally, my front yard") weather conditions:</p>
+A little taste of my local (as in, "literally, my front yard") weather conditions:
+<br><br>
+</font>
+<font type="Georgia" size=4 color="white"> 
+(Calculator included if you wish to convert to Celsius; thanks to my wonderful German friend Barbara for suggesting it!)
 </font>
 
+<script type="text/javascript">
+            <!--
+function convertToC() {
+        var fTempVal = parseFloat(document.getElementById('fTemp').value);
+        var cTempVal = (fTempVal - 32) * (5 / 9);
+        document.getElementById('cTemp').value = cTempVal;
+        return false;
+    }
+
+    function convertToF() {
+        var cTempVal = parseFloat(document.getElementById('cTemp').value);
+        var fTempVal = (cTempVal * (9 / 5)) + 32;
+        console.log(fTempVal);
+        document.getElementById('fTemp').value = fTempVal;
+        return false;
+    }
+// -->
+    </script>
+
+<form name="conversionForm">
+    <table border="1" font color="white">
+        <tbody>
+            <tr>
+                <td><font color="white">Fahrenheit</font></td>
+                <td>
+                    <input name="fTemp" id="fTemp" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToC();return false">Convert to Celsius</button>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white">Celsius</font></td>
+                <td>
+                    <input name="cTemp" id="cTemp" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToF();return false">Convert to Fahrenheit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
 
 <iframe width="500" height="400" frameborder="0" 
 src="https://ambientweather.net/devices/public/94dccbf470947054cfa5f0f863706b0d?embed=true">
