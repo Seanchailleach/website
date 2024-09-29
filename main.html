@@ -1,0 +1,300 @@
+<HTML>
+<HEAD>
+<style>
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: light blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<TITLE>Welcome to the home of the Weather Witch</TITLE>
+</HEAD>
+
+<BODY bgcolor="black">
+<center>
+<font type="Georgia" size=7 color="white">
+Greetings from the Weather Witch!
+</font>
+</center>
+<br><br><br>
+<font type="Georgia" size=5 color="white">
+
+<p>My intent for this site is to bring together the wisdom of the old ways and modern technology, with emphasis on weather watching and 
+forecasting. Why? Because I’m a weather nerd. I’m as enthralled with radar and modern weather forecasting models as I am with reading the 
+signs of nature to predict the weather. I don’t think it’s an either/or; “both” is perfectly reasonable.</p>
+ 
+<p>Not gonna lie, my HTML skills are from the 1990s so this is going to be a long-term and tedious (at least for me) project. Expect numerous,
+and hopefully frequent, updates. I promise pics and prettiness and witchy nature stuff in the future! But for now, I plan to plug along a bit 
+every day.</p>
+<br><br>
+<center>
+A little taste of my local (as in, "literally, my front yard") weather conditions:
+<br><br>
+<iframe width="500" height="400" frameborder="0" 
+src="https://ambientweather.net/devices/public/94dccbf470947054cfa5f0f863706b0d?embed=true">
+</iframe><p><font color="white">powered by <a target="_blank" href="https://ambientweather.net">Ambient Weather</a></p>
+<br><br>
+</font>
+<font type="Georgia" size=4 color="white"> 
+(Calculators included if you wish to convert any values; thanks to my wonderful German friend Barbara for suggesting it!)
+</font>
+
+<script type="text/javascript">
+            <!--
+function convertToC() {
+        var fTempVal = parseFloat(document.getElementById('fTemp').value);
+        var cTempVal = (fTempVal - 32) * (5 / 9);
+        document.getElementById('cTemp').value = cTempVal;
+        return false;
+    }
+
+    function convertToF() {
+        var cTempVal = parseFloat(document.getElementById('cTemp').value);
+        var fTempVal = (cTempVal * (9 / 5)) + 32;
+        console.log(fTempVal);
+        document.getElementById('fTemp').value = fTempVal;
+        return false;
+    }
+// -->
+    </script>
+
+<form name="conversionForm">
+    <table border="1" font color="white">
+        <tbody>
+            <tr>
+                <td><font color="white">Fahrenheit</font></td>
+                <td>
+                    <input name="fTemp" id="fTemp" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToC();return false">Convert to Celsius</button>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white">Celsius</font></td>
+                <td>
+                    <input name="cTemp" id="cTemp" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToF();return false">Convert to Fahrenheit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+
+<script type="text/javascript">
+            <!--
+function convertToK() {
+        var mSpeedVal = parseFloat(document.getElementById('mSpeed').value);
+        var kSpeedVal = (mSpeedVal * 1.6);
+        document.getElementById('kSpeed').value = kSpeedVal;
+        return false;
+    }
+
+function convertToM() {
+        var kSpeedVal = parseFloat(document.getElementById('kSpeed').value);
+        var mSpeedVal = (kSpeedVal / 1.6);
+        console.log(mSpeedVal);
+        document.getElementById('mSpeed').value = mSpeedVal;
+        return false;
+    }
+
+// -->
+    </script>
+
+<form name="conversionForm">
+    <table border="1" font color="white">
+        <tbody>
+            <tr>
+                <td><font color="white">Miles per Hour</font></td>
+                <td>
+                    <input name="mSpeed" id="mSpeed" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToK();return false">Convert to Kilometers per Hour</button>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white">Kilometers per Hour</font></td>
+                <td>
+                    <input name="kSpeed" id="kSpeed" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToM();return false">Convert to Miles per Hour</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<script type="text/javascript">
+            <!--
+function convertToKn() {
+        var mkSpeedVal = parseFloat(document.getElementById('mkSpeed').value);
+        var knSpeedVal = (mkSpeedVal * 0.8689762419);
+        document.getElementById('knSpeed').value = knSpeedVal;
+        return false;
+    }
+
+function convertToMk() {
+        var knSpeedVal = parseFloat(document.getElementById('knSpeed').value);
+        var mkSpeedVal = (knSpeedVal / 0.8689762419);
+        console.log(mkSpeedVal);
+        document.getElementById('mkSpeed').value = mkSpeedVal;
+        return false;
+    }
+
+
+// -->
+    </script>
+
+<form name="conversionForm">
+    <table border="1" font color="white">
+        <tbody>
+            <tr>
+                <td><font color="white">Miles per Hour</font></td>
+                <td>
+                    <input name="mkSpeed" id="mkSpeed" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToKn();return false">Convert to Knots per Hour</button>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white">Knots per Hour</font></td>
+                <td>
+                    <input name="knSpeed" id="knSpeed" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToMk();return false">Convert to Miles per Hour</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+
+
+<script type="text/javascript">
+            <!--
+function convertToCm() {
+        var inVal = parseFloat(document.getElementById('in').value);
+        var cmVal = (inVal * 2.54);
+        document.getElementById('cm').value = cmVal;
+        return false;
+    }
+
+    function convertToIn() {
+        var cmVal = parseFloat(document.getElementById('cm').value);
+        var inVal = (cmVal *  0.3937007874);
+        console.log(inVal);
+        document.getElementById('in').value = inVal;
+        return false;
+    }
+// -->
+    </script>
+
+<form name="conversionForm">
+    <table border="1" font color="white">
+        <tbody>
+            <tr>
+                <td><font color="white">Inches</font></td>
+                <td>
+                    <input name="inl" id="in" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToCm();return false">Convert to Centimeters</button>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white">Centimeters</font></td>
+                <td>
+                    <input name="cm" id="cm" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToIn();return false">Convert to Inches</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+            <!--
+function convertToB() {
+        var hgPresVal = parseFloat(document.getElementById('hgPres').value);
+        var bPresVal = (hgPresVal * 0.0339);
+        document.getElementById('bPres').value = bPresVal;
+        return false;
+    }
+
+    function convertToHg() {
+        var bPresVal = parseFloat(document.getElementById('bPres').value);
+        var hgPresVal = (bPresVal * 29.52998);
+        console.log(hgPresVal);
+        document.getElementById('hgPres').value = hgPresVal;
+        return false;
+    }
+// -->
+    </script>
+
+<form name="conversionForm">
+    <table border="1" font color="white">
+        <tbody>
+            <tr>
+                <td><font color="white">inHg</font></td>
+                <td>
+                    <input name="hgPres" id="hgPres" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToB();return false">Convert to Bars</button>
+                </td>
+            </tr>
+            <tr>
+                <td><font color="white">Bars</font></td>
+                <td>
+                    <input name="bPres" id="bPres" type="text" />
+                </td>
+                <td>
+                    <button type="button" onclick="convertToHg();return false">Convert to inHg</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+
+
+</BODY>
+</HTML>
