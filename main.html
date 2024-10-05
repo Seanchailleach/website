@@ -1,23 +1,21 @@
 <HTML>
 <HEAD>
+
 <style>
 a:link {
-  color: red;
+  color: maroon;
   background-color: transparent;
   text-decoration: none;
+  font-weight: bold;
 }
 a:visited {
-  color: orange;
+  color: purple;
   background-color: transparent;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
-  color: light blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
+  color: orange;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -26,32 +24,29 @@ a:active {
 <TITLE>Welcome to the home of the Weather Witch</TITLE>
 </HEAD>
 
-<BODY bgcolor="black">
+<BODY background="clouds1.jpg">
 <center>
-<font type="Georgia" size=7 color="white">
+<font type="Georgia" size=7>
 Greetings from the Weather Witch!
 </font>
 </center>
 <br><br><br>
-<font type="Georgia" size=5 color="white">
+<font type="Georgia" size=5>
 
 <p>My intent for this site is to bring together the wisdom of the old ways and modern technology, with emphasis on weather watching and 
 forecasting. Why? Because I’m a weather nerd. I’m as enthralled with radar and modern weather forecasting models as I am with reading the 
 signs of nature to predict the weather. I don’t think it’s an either/or; “both” is perfectly reasonable.</p>
- 
-<p>Not gonna lie, my HTML skills are from the 1990s so this is going to be a long-term and tedious (at least for me) project. Expect numerous,
-and hopefully frequent, updates. I promise pics and prettiness and witchy nature stuff in the future! But for now, I plan to plug along a bit 
-every day.</p>
+
 <br><br>
 <center>
 A little taste of my local (as in, "literally, my front yard") weather conditions:
 <br><br>
 <iframe width="500" height="400" frameborder="0" 
 src="https://ambientweather.net/devices/public/94dccbf470947054cfa5f0f863706b0d?embed=true">
-</iframe><p><font color="white">powered by <a target="_blank" href="https://ambientweather.net">Ambient Weather</a></p>
+</iframe><p>powered by <a target="_blank" href="https://ambientweather.net">Ambient Weather</a></p>
 <br><br>
-</font>
-<font type="Georgia" size=4 color="white"> 
+
+<font type="Georgia" size=4> 
 (Calculators included if you wish to convert any values; thanks to my wonderful German friend Barbara for suggesting it!)
 </font>
 
@@ -75,10 +70,10 @@ function convertToC() {
     </script>
 
 <form name="conversionForm">
-    <table border="1" font color="white">
+    <table border="1">
         <tbody>
             <tr>
-                <td><font color="white">Fahrenheit</font></td>
+                <td>Fahrenheit</td>
                 <td>
                     <input name="fTemp" id="fTemp" type="text" />
                 </td>
@@ -87,7 +82,7 @@ function convertToC() {
                 </td>
             </tr>
             <tr>
-                <td><font color="white">Celsius</font></td>
+                <td>Celsius</td>
                 <td>
                     <input name="cTemp" id="cTemp" type="text" />
                 </td>
@@ -121,10 +116,10 @@ function convertToM() {
     </script>
 
 <form name="conversionForm">
-    <table border="1" font color="white">
+    <table border="1">
         <tbody>
             <tr>
-                <td><font color="white">Miles per Hour</font></td>
+                <td>Miles per Hour</td>
                 <td>
                     <input name="mSpeed" id="mSpeed" type="text" />
                 </td>
@@ -133,7 +128,7 @@ function convertToM() {
                 </td>
             </tr>
             <tr>
-                <td><font color="white">Kilometers per Hour</font></td>
+                <td>Kilometers per Hour</td>
                 <td>
                     <input name="kSpeed" id="kSpeed" type="text" />
                 </td>
@@ -167,10 +162,10 @@ function convertToMk() {
     </script>
 
 <form name="conversionForm">
-    <table border="1" font color="white">
+    <table border="1">
         <tbody>
             <tr>
-                <td><font color="white">Miles per Hour</font></td>
+                <td>Miles per Hour</td>
                 <td>
                     <input name="mkSpeed" id="mkSpeed" type="text" />
                 </td>
@@ -179,7 +174,7 @@ function convertToMk() {
                 </td>
             </tr>
             <tr>
-                <td><font color="white">Knots per Hour</font></td>
+                <td>Knots per Hour</td>
                 <td>
                     <input name="knSpeed" id="knSpeed" type="text" />
                 </td>
@@ -213,10 +208,10 @@ function convertToCm() {
     </script>
 
 <form name="conversionForm">
-    <table border="1" font color="white">
+    <table border="1">
         <tbody>
             <tr>
-                <td><font color="white">Inches</font></td>
+                <td>Inches</td>
                 <td>
                     <input name="inl" id="in" type="text" />
                 </td>
@@ -225,7 +220,7 @@ function convertToCm() {
                 </td>
             </tr>
             <tr>
-                <td><font color="white">Centimeters</font></td>
+                <td>Centimeters</td>
                 <td>
                     <input name="cm" id="cm" type="text" />
                 </td>
@@ -236,17 +231,6 @@ function convertToCm() {
         </tbody>
     </table>
 </form>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -270,10 +254,10 @@ function convertToB() {
     </script>
 
 <form name="conversionForm">
-    <table border="1" font color="white">
+    <table border="1">
         <tbody>
             <tr>
-                <td><font color="white">inHg</font></td>
+                <td>inHg</td>
                 <td>
                     <input name="hgPres" id="hgPres" type="text" />
                 </td>
@@ -282,7 +266,7 @@ function convertToB() {
                 </td>
             </tr>
             <tr>
-                <td><font color="white">Bars</font></td>
+                <td>Bars</td>
                 <td>
                     <input name="bPres" id="bPres" type="text" />
                 </td>
@@ -293,8 +277,6 @@ function convertToB() {
         </tbody>
     </table>
 </form>
-
-
 
 </BODY>
 </HTML>
