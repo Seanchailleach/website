@@ -1,95 +1,121 @@
-<HTML>
-<HEAD>
-<style>
-a:link {
-  color: maroon;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:hover {
-  color: orange;
-  background-color: transparent;
-  text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books — The Weather Witch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-</style>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="moon-mini">☽</span> The Weather Witch</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <details class="nav-group">
+        <summary>Old Ways</summary>
+        <ul>
+          <li><a href="witchcraft.html">Why the "Weather Witch"?</a></li>
+          <li><a href="witchlinks.html">Weather Witchcraft Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group">
+        <summary>Modern Tech</summary>
+        <ul>
+          <li><a href="stations.html">Weather Stations</a></li>
+          <li><a href="share.html">Sharing Weather Data</a></li>
+          <li><a href="sciencelinks.html">Weather Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary>Resources</summary>
+        <ul>
+          <li><a href="safety.html">Safety Planning</a></li>
+          <li><a href="books.html" class="active" aria-current="page">Books</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
 
-<TITLE>Books</TITLE>
-</HEAD>
+<div class="page-header stars">
+  <h1>Books</h1>
+  <p class="tagline">Reading recommendations, old and new.</p>
+</div>
 
-<BODY background="clouds1.jpg">
-<center>
-<font type="Georgia" size=7>
-Books
-</font>
-<br><br>
-<font type="Georgia" size=4>
-<i>I am a huge fan of libraries; I suggest you check yours out and see what they have to offer. Not just in the context of books; some 
-also offer discounted memberships for educational resources. For example, I get unlimited free classes from Universal Class through my 
-library (which does indeed offer a meteorology course). No time to read? Most have audiobooks too. See if your library is linked with 
-apps like <a href="https://libbyapp.com" target="top">Libby</a> and <a href="https://www.hoopladigital.com" target="top">Hoopla</a>, so you can check out 
-books to download to your Kindle or other readers.</i>
-<br><br><br>
-<font type="Georgia" size=5>
+<main>
+  <section>
+    <p>I am a huge fan of libraries; I suggest you check yours out and see what they have to offer. Not just in the context of books; some
+    also offer discounted memberships for educational resources. For example, I get unlimited free classes from Universal Class through my
+    library (which does indeed offer a meteorology course). No time to read? Most have audiobooks too. See if your library is linked with
+    apps like <a href="https://libbyapp.com" target="top">Libby</a> and <a href="https://www.hoopladigital.com" target="top">Hoopla</a>, so you can check out
+    books to download to your Kindle or other readers.</p>
+  </section>
 
-<a href="https://www.almanac.com/" target="top">
-<img src="ofa.jpg" width="400" height="500"></a><br>
-<i>THIS. This is the OG, end-all, be-all. It's a practical guide for all things farming/gardening/weather/etc.</i> 
-<br><br><br>
+  <section>
+    <ul class="link-list">
+      <li>
+        <a href="https://www.almanac.com/" target="top"><img src="ofa.jpg" width="400" height="500"></a><br>
+        <i>THIS. This is the OG, end-all, be-all. It's a practical guide for all things farming/gardening/weather/etc.</i>
+      </li>
+      <li>
+        <a href="https://www.farmersalmanac.com/" target="top"><img src="fa.jpg" width="400" height="500"></a><br>
+        <i>Not to be confused with the <b>Old</b> Farmers Almanac above (although very similar)--sadly, this one is on its way out.
+        <b>HAPPY UPDATE: The Farmer's Almanac has been bought and will continue!!</b> It's a fun-filled and charming blend of "the old ways"
+        and folklore, mixed with science-based information. Even if you choose not to purchase the physical book, the web site is an
+        awesome way to spend an afternoon learning.</i>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/gp/aw/d/1615191488?psc=1&ref=ppx_pop_mob_b_asin_image" target="top"><img src="sww.jpg" width="400" height="500"></a>
+        <br>
+        <i>I have this book; I haven't finished it yet, but it's an interesting read.</i>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/gp/aw/d/1615192417?psc=1&ref=ppx_pop_mob_b_asin_image" target="top"><img src="rns.jpg" width="400" height="500"></a>
+        <br>
+        <i>I have this book too; it's more about nature in general, but it does have a chapter specifically about weather.</i>
+      </li>
+      <li>
+        <a href="https://www.barnesandnoble.com/w/weather-magic-debra-l-burris/1143529396" target="top"><img src="WM.jpg" width="400" height="500"></a>
+        <br>
+        <i> Dr. Buriss is an astrophysicist AND a witch, so she brings a unique and balanced perspective. I have this book in my to-read pile.</i>
+      </li>
+      <li>
+        <a href="https://www.audiobooks.com/audiobook/weather-science-how-meteorology-has-gone-from-folklore-to-high-tech/800360" target="top"><img src="ws.jpg" width="400" height="500"></a>
+        <br>
+        <i>Note: this is an audio book.</i>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/Reading-Glass-Captains-Weather-Water/dp/0593185056?dplnkId=c3448e6e-6782-4569-82c9-185531f14266" target="top"><img src="rtg.jpg" width="400" height="500"></a>
+        <br>
+        <i>Recommended by my dear friend and colleague Barbara--certainly sounds interesting!</i>
+      </li>
+      <li>
+        <a href="https://www.abebooks.com/servlet/BookDetailsPL?bi=31113216840&dest=usa&ref_=ps_ms_370718797&cm_mmc=msn-_-comus_shopp_textbook-_-naa-_-naa&msclkid=eab484ac04e01abf7ff9e2505c4c62f4" target="top">
+        <img src="wih.jpg"></a>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/Science-Spell-Book-Magical-Experiments/dp/172823252X/ref=sr_1_1" target="top"><img src="sbfk.jpg" width="400" height="500"></a>
+        <br>
+        <i>A little bonus: a book for children that makes science feel like magic (because it is). This book is obviously neither about weather
+        nor witchcraft, but it underscores the science behind what seems magical. I have this book and have already done several experiments
+        with my young grandchildren; it's a big hit, satisfying both their eagerness for knowledge and their love of all things enchanted.</i>
+      </li>
+    </ul>
+  </section>
+</main>
 
-<a href="https://www.farmersalmanac.com/" target="top">
-<img src="fa.jpg" width="400" height="500"></a><br>
-<i>Not to be confused with the <b>Old</b> Farmers Almanac above (although very similar)--sadly, this one is on its way out. 
-<b>HAPPY UPDATE: The Farmer's Almanac has been bought and will continue!!</b> It's a fun-filled and charming blend of "the old ways" 
-and folklore, mixed with science-based information. Even if you choose not to purchase the physical book, the web site is an 
-awesome way to spend an afternoon learning.</i> 
-<br><br><br>
+<footer>
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+  <p>Reading the sky, one front yard at a time.</p>
+</footer>
 
-<a href="https://www.amazon.com/gp/aw/d/1615191488?psc=1&ref=ppx_pop_mob_b_asin_image" target="top"><img src="sww.jpg" width="400" height="500"></a>
-<br>
-<i>I have this book; I haven't finished it yet, but it's an interesting read.</i>
-<br><br><br>
-
-<a href="https://www.amazon.com/gp/aw/d/1615192417?psc=1&ref=ppx_pop_mob_b_asin_image" target="top"><img src="rns.jpg" width="400" height="500"></a>
-<br>
-<i>I have this book too; it's more about nature in general, but it does have a chapter specifically about weather.</i>
-<br><br><br>
-
-<a href="https://www.barnesandnoble.com/w/weather-magic-debra-l-burris/1143529396" target="top"><img src="WM.jpg" width="400" height="500"></a>
-<br>
-<i> Dr. Buriss is an astrophysicist AND a witch, so she brings a unique and balanced perspective. I have this book in my to-read pile.</i>
-<br><br><br>
-
-<a href="https://www.audiobooks.com/audiobook/weather-science-how-meteorology-has-gone-from-folklore-to-high-tech/800360" target="top"><img src="ws.jpg" width="400" height="500"></a>
-<br>
-<i>Note: this is an audio book.</i>
-<br><br><br>
-
-<a href="https://www.amazon.com/Reading-Glass-Captains-Weather-Water/dp/0593185056?dplnkId=c3448e6e-6782-4569-82c9-185531f14266" target="top"><img src="rtg.jpg" width="400" height="500"></a>
-<br>
-<i>Recommended by my dear friend and colleague Barbara--certainly sounds interesting!</i>
-<br><br><br>
-
-<a href="https://www.abebooks.com/servlet/BookDetailsPL?bi=31113216840&dest=usa&ref_=ps_ms_370718797&cm_mmc=msn-_-comus_shopp_textbook-_-naa-_-naa&msclkid=eab484ac04e01abf7ff9e2505c4c62f4" target="top">
-<img src="wih.jpg"></a>
-<br><br><br>
-
-<a href="https://www.amazon.com/Science-Spell-Book-Magical-Experiments/dp/172823252X/ref=sr_1_1 target="top"><img src="sbfk.jpg" width="400" height="500"></a>
-<br>
-<i>A little bonus: a book for children that makes science feel like magic (because it is). This book is obviously neither about weather 
-nor witchcraft, but it underscores the science behind what seems magical. I have this book and have already done several experiments 
-with my young grandchildren; it's a big hit, satisfying both their eagerness for knowledge and their love of all things enchanted.</i>
-
-<br><br><br><br>
-<center>
-<a href="main.html">Home</a>
-
-</BODY>
-</HTML>
+<script src="nav.js" defer></script>
+</body>
+</html>

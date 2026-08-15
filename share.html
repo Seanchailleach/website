@@ -1,61 +1,80 @@
-<HTML>
-<HEAD>
-<style>
-a:link {
-  color: maroon;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:hover {
-  color: orange;
-  background-color: transparent;
-  text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharing Weather Data — The Weather Witch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-</style>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="moon-mini">☽</span> The Weather Witch</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <details class="nav-group">
+        <summary>Old Ways</summary>
+        <ul>
+          <li><a href="witchcraft.html">Why the "Weather Witch"?</a></li>
+          <li><a href="witchlinks.html">Weather Witchcraft Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary>Modern Tech</summary>
+        <ul>
+          <li><a href="stations.html">Weather Stations</a></li>
+          <li><a href="share.html" class="active" aria-current="page">Sharing Weather Data</a></li>
+          <li><a href="sciencelinks.html">Weather Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group">
+        <summary>Resources</summary>
+        <ul>
+          <li><a href="safety.html">Safety Planning</a></li>
+          <li><a href="books.html">Books</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
 
-<TITLE>Sharing Data</TITLE>
-</HEAD>
+<div class="page-header stars">
+  <h1>Sharing Weather Data</h1>
+  <p class="tagline">Where my readings get sent, and how yours can too.</p>
+</div>
 
-<BODY background="clouds1.jpg">
-<center>
-<font type="Georgia" size=7>
-Sharing Your Weather Data
-</font>
-<br><br>
+<main>
+  <section>
+    <div class="content-card">
+      <p>You've got your weather station set up, all seems to be working as expected, and you have access to your weather data via your console
+      and/or phone app. So...now what? If you would like to share your data with others, there are several ways to do so (and you are not
+      limited to just one method). I share mine with Ambient Weather, Weather Underground, and the NWS. Depending on the brand of weather
+      station you have, there may be other options for sharing as well.</p>
+      <p>The Ambient WS-2000 console makes it pretty easy to share with Ambient and Weather Underground; this is accomplished through the console
+      settings. Sharing with the NWS is a bit more complicated, requiring a <a href="http://www.wxqa.com/cwop_info.htm" target="top">CWOP</a>
+      account, confirming my station on <a href="http://findu.com" target="top">FINDU</a>, and getting a <a href="https://madis.ncep.noaa.gov/" target="top">MADIS ID.</a>
+      <i>(Please note, all of this is free.)</i>
+      The Ambient phone app even gives you copy-and-paste code to add to a web site (like I did, on the home page).</p>
+      <p>Why would you want to share your weather data? Because the NWS can use it to improve their computer model data for your area, as well
+      as allow for more accurate weather forecasting. This is especially true if you (like me) live in a small town outside of a large
+      metropolitan area. With an influx of data from surrounding areas, model data will be more accurate for those of us living outside the city.
+      <a href="https://www.weather.gov/iln/cwop" target="top">This link gives a great explanation.</a> (Please note, this is for my local Weather
+      Forecast Office, but the overall idea is the same wherever you live.)</p>
+    </div>
+  </section>
+</main>
 
-</center>
-<font type="Georgia" size=5>
+<footer>
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+  <p>Reading the sky, one front yard at a time.</p>
+</footer>
 
-<p>You've got your weather station set up, all seems to be working as expected, and you have access to your weather data via your console 
-and/or phone app. So...now what? If you would like to share your data with others, there are several ways to do so (and you are not 
-limited to just one method). I share mine with Ambient Weather, Weather Underground, and the NWS. Depending on the brand of weather 
-station you have, there may be other options for sharing as well.</p>
-
-<p>The Ambient WS-2000 console makes it pretty easy to share with Ambient and Weather Underground; this is accomplished through the console 
-settings. Sharing with the NWS is a bit more complicated, requiring a <a href="http://www.wxqa.com/cwop_info.htm" target="top">CWOP</a> 
-account, confirming my station on <a href="http://findu.com" target="top">FINDU</a>, and getting a <a href="https://madis.ncep.noaa.gov/" target="top">MADIS ID.</a>
-<i>(Please note, all of this is free.)</i>  
-The Ambient phone app even gives you copy-and-paste code to add to a web site (like I did, on the home page).</p> 
-
-<p>Why would you want to share your weather data? Because the NWS can use it to improve their computer model data for your area, as well 
-as allow for more accurate weather forecasting. This is especially true if you (like me) live in a small town outside of a large 
-metropolitan area. With an influx of data from surrounding areas, model data will be more accurate for those of us living outside the city. 
-<a href="https://www.weather.gov/iln/cwop" target="top">This link gives a great explanation.</a> (Please note, this is for my local Weather 
-Forecast Office, but the overall idea is the same wherever you live.)</p>
-
-
-
-<br><br><br><br>
-<center>
-<a href="main.html">Home</a>
-
-</BODY>
-</HTML>
+<script src="nav.js" defer></script>
+</body>
+</html>

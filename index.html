@@ -1,40 +1,268 @@
-<HTML>
-<HEAD>
-<frameset cols="25%, 75%">
-<frame src="menu.html" name="menu">
-<frame src="main.html" name="main">
-</frameset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Witch — Old Ways, Modern Skies</title>
 
-<style>
-a:link {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: orange;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: light blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
 
-<TITLE></TITLE>
-</HEAD>
+<body>
 
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="weather-witch.html"><span class="moon-mini">☽</span> The Weather Witch</a>
 
-<br><br><br>
-<center>
-<a href="index.html">Home</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
 
-</BODY>
-</HTML>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="weather-witch.html" class="active" aria-current="page">Home</a>
+
+      <details class="nav-group">
+        <summary>Old Ways</summary>
+        <ul>
+          <li><a href="witchcraft.html">Why the "Weather Witch"?</a></li>
+          <li><a href="witchlinks.html">Weather Witchcraft Links</a></li>
+        </ul>
+      </details>
+
+      <details class="nav-group">
+        <summary>Modern Tech</summary>
+        <ul>
+          <li><a href="stations.html">Weather Stations</a></li>
+          <li><a href="share.html">Sharing Weather Data</a></li>
+          <li><a href="sciencelinks.html">Weather Links</a></li>
+        </ul>
+      </details>
+
+      <details class="nav-group">
+        <summary>Resources</summary>
+        <ul>
+          <li><a href="safety.html">Safety Planning</a></li>
+          <li><a href="books.html">Books</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<div class="stars hero">
+  <span class="moon" aria-hidden="true">☽</span>
+  <h1>The Weather Witch</h1>
+  <p class="tagline">Old ways and modern models, read side by side.</p>
+</div>
+
+<main>
+
+  <section>
+    <div class="intro-card">
+      <p>My intent for this site is to bring together the wisdom of the old ways and modern technology,
+      with emphasis on weather watching and forecasting. Why? Because <strong>I'm a weather nerd</strong>.
+      I'm as enthralled with radar and modern weather forecasting models as I am with reading the signs
+      of nature to predict the weather. I don't think it's an either/or — both is perfectly reasonable.</p>
+    </div>
+  </section>
+
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+
+  <section>
+    <h2>The Sky Over My Doorstep</h2>
+    <p class="section-sub">Live conditions, literally from my front yard.</p>
+    <div class="instrument-panel">
+      <iframe
+        title="Live local weather conditions"
+        src="https://ambientweather.net/devices/public/94dccbf470947054cfa5f0f863706b0d?embed=true">
+      </iframe>
+      <p class="instrument-credit">powered by <a target="_blank" rel="noopener" href="https://ambientweather.net">Ambient Weather</a></p>
+    </div>
+  </section>
+
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+
+  <section>
+    <h2>Instruments of Translation</h2>
+    <p class="section-sub">Unit calculators, for whichever system you read in. Thanks to my wonderful German friend Barbara for suggesting it!</p>
+
+    <div class="converter-grid">
+
+      <div class="converter-card">
+        <h3>Temperature</h3>
+        <div class="converter-row">
+          <div class="field">
+            <label for="fTemp">Fahrenheit</label>
+            <input name="fTemp" id="fTemp" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToC();return false">→ Celsius</button>
+        </div>
+        <div class="converter-row">
+          <div class="field">
+            <label for="cTemp">Celsius</label>
+            <input name="cTemp" id="cTemp" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToF();return false">→ Fahrenheit</button>
+        </div>
+      </div>
+
+      <div class="converter-card">
+        <h3>Wind Speed</h3>
+        <div class="converter-row">
+          <div class="field">
+            <label for="mSpeed">Miles / hour</label>
+            <input name="mSpeed" id="mSpeed" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToK();return false">→ km/h</button>
+        </div>
+        <div class="converter-row">
+          <div class="field">
+            <label for="kSpeed">Kilometers / hour</label>
+            <input name="kSpeed" id="kSpeed" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToM();return false">→ mph</button>
+        </div>
+      </div>
+
+      <div class="converter-card">
+        <h3>Wind Speed (Nautical)</h3>
+        <div class="converter-row">
+          <div class="field">
+            <label for="mkSpeed">Miles / hour</label>
+            <input name="mkSpeed" id="mkSpeed" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToKn();return false">→ Knots</button>
+        </div>
+        <div class="converter-row">
+          <div class="field">
+            <label for="knSpeed">Knots</label>
+            <input name="knSpeed" id="knSpeed" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToMk();return false">→ mph</button>
+        </div>
+      </div>
+
+      <div class="converter-card">
+        <h3>Precipitation / Length</h3>
+        <div class="converter-row">
+          <div class="field">
+            <label for="in">Inches</label>
+            <input name="inl" id="in" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToCm();return false">→ cm</button>
+        </div>
+        <div class="converter-row">
+          <div class="field">
+            <label for="cm">Centimeters</label>
+            <input name="cm" id="cm" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToIn();return false">→ in</button>
+        </div>
+      </div>
+
+      <div class="converter-card">
+        <h3>Barometric Pressure</h3>
+        <div class="converter-row">
+          <div class="field">
+            <label for="hgPres">inHg</label>
+            <input name="hgPres" id="hgPres" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToB();return false">→ Bars</button>
+        </div>
+        <div class="converter-row">
+          <div class="field">
+            <label for="bPres">Bars</label>
+            <input name="bPres" id="bPres" type="text" inputmode="decimal" />
+          </div>
+          <button type="button" class="convert-btn" onclick="convertToHg();return false">→ inHg</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+  <p>Reading the sky, one front yard at a time.</p>
+</footer>
+
+<script src="nav.js" defer></script>
+<script>
+  function convertToC() {
+    var fTempVal = parseFloat(document.getElementById('fTemp').value);
+    var cTempVal = (fTempVal - 32) * (5 / 9);
+    document.getElementById('cTemp').value = round2(cTempVal);
+    return false;
+  }
+  function convertToF() {
+    var cTempVal = parseFloat(document.getElementById('cTemp').value);
+    var fTempVal = (cTempVal * (9 / 5)) + 32;
+    document.getElementById('fTemp').value = round2(fTempVal);
+    return false;
+  }
+
+  function convertToK() {
+    var mSpeedVal = parseFloat(document.getElementById('mSpeed').value);
+    var kSpeedVal = (mSpeedVal * 1.6);
+    document.getElementById('kSpeed').value = round2(kSpeedVal);
+    return false;
+  }
+  function convertToM() {
+    var kSpeedVal = parseFloat(document.getElementById('kSpeed').value);
+    var mSpeedVal = (kSpeedVal / 1.6);
+    document.getElementById('mSpeed').value = round2(mSpeedVal);
+    return false;
+  }
+
+  function convertToKn() {
+    var mkSpeedVal = parseFloat(document.getElementById('mkSpeed').value);
+    var knSpeedVal = (mkSpeedVal * 0.8689762419);
+    document.getElementById('knSpeed').value = round2(knSpeedVal);
+    return false;
+  }
+  function convertToMk() {
+    var knSpeedVal = parseFloat(document.getElementById('knSpeed').value);
+    var mkSpeedVal = (knSpeedVal / 0.8689762419);
+    document.getElementById('mkSpeed').value = round2(mkSpeedVal);
+    return false;
+  }
+
+  function convertToCm() {
+    var inVal = parseFloat(document.getElementById('in').value);
+    var cmVal = (inVal * 2.54);
+    document.getElementById('cm').value = round2(cmVal);
+    return false;
+  }
+  function convertToIn() {
+    var cmVal = parseFloat(document.getElementById('cm').value);
+    var inVal = (cmVal * 0.3937007874);
+    document.getElementById('in').value = round2(inVal);
+    return false;
+  }
+
+  function convertToB() {
+    var hgPresVal = parseFloat(document.getElementById('hgPres').value);
+    var bPresVal = (hgPresVal * 0.0339);
+    document.getElementById('bPres').value = round2(bPresVal);
+    return false;
+  }
+  function convertToHg() {
+    var bPresVal = parseFloat(document.getElementById('bPres').value);
+    var hgPresVal = (bPresVal * 29.52998);
+    document.getElementById('hgPres').value = round2(hgPresVal);
+    return false;
+  }
+
+  function round2(n) {
+    return isNaN(n) ? '' : Math.round(n * 100) / 100;
+  }
+</script>
+
+</body>
+</html>

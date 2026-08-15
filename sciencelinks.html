@@ -1,83 +1,118 @@
-<HTML>
-<HEAD>
-<base target="main">
-<style>
-a:link {
-  color: maroon;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:hover {
-  color: orange;
-  background-color: transparent;
-  text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Links — The Weather Witch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-</style>
-</HEAD>
-<body background="clouds3.jpg">
-<font type="Georgia" size=7>
-<center>
-Weather Agencies/Weather Reporting
-</font>
-<br><br>
-<font type="Georgia" size=5>
-<a href="https://www.weather.gov/" target="top">The National Weather Service</a>
-<br><br>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="moon-mini">☽</span> The Weather Witch</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <details class="nav-group">
+        <summary>Old Ways</summary>
+        <ul>
+          <li><a href="witchcraft.html">Why the "Weather Witch"?</a></li>
+          <li><a href="witchlinks.html">Weather Witchcraft Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary>Modern Tech</summary>
+        <ul>
+          <li><a href="stations.html">Weather Stations</a></li>
+          <li><a href="share.html">Sharing Weather Data</a></li>
+          <li><a href="sciencelinks.html" class="active" aria-current="page">Weather Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group">
+        <summary>Resources</summary>
+        <ul>
+          <li><a href="safety.html">Safety Planning</a></li>
+          <li><a href="books.html">Books</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
 
-<a href="https://www.noaa.gov/" target="top">NOAA</a>
-<br><br>
+<div class="page-header stars">
+  <h1>Weather Links</h1>
+  <p class="tagline">Radar, models, and other modern forecasting tools.</p>
+</div>
 
-<a href="https://www.wunderground.com/" target="top">Weather Underground</a>
-<br><br>
+<main>
+  <section>
+    <ul class="link-list">
+      <li>
+        <a href="https://www.weather.gov/" target="top">The National Weather Service</a>
+      </li>
+      <li>
+        <a href="https://www.noaa.gov/" target="top">NOAA</a>
+      </li>
+      <li>
+        <a href="https://www.wunderground.com/" target="top">Weather Underground</a>
+      </li>
+      <li>
+        <a href="https://ambientweather.net/" target="top">Ambient Weather Network</a>
+      </li>
+      <li>
+        <a href="https://weather.com/" target="top">The Weather Channel</a>
+      </li>
+    </ul>
+  </section>
 
-<a href="https://ambientweather.net/" target="top">Ambient Weather Network</a>
-<br><br>
+  <section>
+    <h3>Online Weather Training and Education</h3>
+    <ul class="link-list">
+      <li>
+        <a href="https://www.meted.ucar.edu/education_training/course/23" target="top">SkyWarn Spotter Training</a>--Two courses, no cost. Can
+        be taken online, but some areas may require that you attend in-person training (also free) in order to be certified.
+      </li>
+      <li>
+        <a href="https://weatheracademy.org/" target="top">Weather Academy Meteorology Courses</a>--Most are no-cost, but the Sounding
+        Interpretation lesson costs about $4 USD.
+      </li>
+      <li>
+        <a href="https://www.universalclass.com/i/course/learn-meteorology-basics.htm" target="top">Universal Class Meteorology Class</a>--Costs
+        about $100 USD, but if you have a library card, check your library's web site. Mine offers free unlimited access to Universal Class.
+      </li>
+      <li>
+        <a href="https://pll.harvard.edu/course/backyard-meteorology-science-weather" target="top">Harvard University Meteorology Course</a>--Can audit for free,
+        or get a certificate for about $150 USD.
+      </li>
+      <li>
+        <a href="https://www.classcentral.com/tag/meteorology" target="top">Class Central List of Meteorology Courses</a>--Some are no-cost.
+      </li>
+      <li>
+        <a href="https://www.udemy.com/courses/search/?src=ukw&q=meteorology" target="top">Udemy Meteorology Courses</a>--Check frequently; as
+        of this posting, all courses are $14 USD but are usually much higher. They do offer discounts fairly often.
+      </li>
+      <li>
+        <a href="https://www.noaa.gov/jetstream" target="top">JetStream</a>--NOAA's online "school" for meteorology.
+      </li>
+      <li>
+        <a href="https://training.weather.gov/wdtd/courses/" target="top">NWS/NOAA Training Courses</a>--Meant
+        for forecaster training; but as far as I can tell, they're free for anyone to take online. Includes Radar &amp; Applications,
+        Warning Operations, and more.
+      </li>
+    </ul>
+  </section>
+</main>
 
-<a href="https://weather.com/" target="top">The Weather Channel</a>
-<br><br><br><br>
+<footer>
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+  <p>Reading the sky, one front yard at a time.</p>
+</footer>
 
-</font>
-<font type="Georgia" size=7>
-<center>
-Online Weather Training and Education
-</font>
-<br><br>
-<font type="Georgia" size=5>
-<a href="https://www.meted.ucar.edu/education_training/course/23" target="top">SkyWarn Spotter Training</a>--Two courses, no cost. Can
-be taken online, but some areas may require that you attend in-person training (also free) in order to be certified.
-<br><br>
-<a href="https://weatheracademy.org/" target="top">Weather Academy Meteorology Courses</a>--Most are no-cost, but the Sounding 
-Interpretation lesson costs about $4 USD. 
-<br><br>
-<a href="https://www.universalclass.com/i/course/learn-meteorology-basics.htm" target="top">Universal Class Meteorology Class</a>--Costs 
-about $100 USD, but if you have a library card, check your library's web site. Mine offers free unlimited access to Universal Class.
-<br><br>
-<a href="https://pll.harvard.edu/course/backyard-meteorology-science-weather" target="top">Harvard University Meteorology Course</a>--Can audit for free, 
-or get a certificate for about $150 USD.
-<br><br>
-<a href="https://www.classcentral.com/tag/meteorology" target="top">Class Central List of Meteorology Courses</a>--Some are no-cost.
-<br><br>
-<a href="https://www.udemy.com/courses/search/?src=ukw&q=meteorology" target="top">Udemy Meteorology Courses</a>--Check frequently; as 
-of this posting, all courses are $14 USD but are usually much higher. They do offer discounts fairly often.
-<br><br>
-<a href="https://www.noaa.gov/jetstream" target="top">JetStream</a>--NOAA's online "school" for meteorology.
-<br><br>
-<a href="https://training.weather.gov/wdtd/courses/" target="top">NWS/NOAA Training Courses</a>--Meant
-for forecaster training; but as far as I can tell, they're free for anyone to take online. Includes Radar & Applications, 
-Warning Operations, and more.
-
-<br><br><br><br>
-
-
-<a href="main.html">Home</a>
-
+<script src="nav.js" defer></script>
 </body>
-</HTML>
+</html>
