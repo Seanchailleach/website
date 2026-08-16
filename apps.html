@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Apps — The Weather Witch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="moon-mini">☽</span> The Weather Witch</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <details class="nav-group">
+        <summary>Old Ways</summary>
+        <ul>
+          <li><a href="witchcraft.html">Why the "Weather Witch"?</a></li>
+          <li><a href="witchlinks.html">Weather Witchcraft Links</a></li>
+        </ul>
+      </details>
+      <details class="nav-group">
+        <summary>Modern Tech</summary>
+        <ul>
+          <li><a href="stations.html">Weather Stations</a></li>
+          <li><a href="share.html">Sharing Weather Data</a></li>
+          <li><a href="sciencelinks.html">Weather Links</a></li>
+          <li><a href="people.html">Storm Livestreams</a></li>
+        </ul>
+      </details>
+      <details class="nav-group" open>
+        <summary>Resources</summary>
+        <ul>
+          <li><a href="safety.html">Safety Planning</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html" class="active" aria-current="page">Weather Apps</a></li>
+        </ul>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header stars">
+  <h1>Weather Apps</h1>
+  <p class="tagline">Forecasts and radar, right in your pocket.</p>
+</div>
+
+<main>
+
+  <section>
+    <p class="section-sub">I haven't personally tried every app on this list, but these are the ones I use myself
+    or that come up again and again as solid picks. As always, poke around and see what fits how you like your
+    weather served up.</p>
+    <ul class="link-list">
+      <li>
+        <a href="https://www.wunderground.com/download" target="top">Weather Underground</a>
+        <p>My go-to for hyperlocal forecasts, since it leans on data from community weather stations (including
+        mine!) instead of just the nearest airport sensor.</p>
+      </li>
+      <li>
+        <a href="https://ambientweather.net/devices" target="top">Ambient Weather</a>
+        <p>If you've got an Ambient station like my WS-2000, this is the companion app--live readings, history,
+        and the ability to share your data straight from your phone.</p>
+      </li>
+      <li>
+        <a href="https://www.myradar.com/" target="top">MyRadar</a>
+        <p>A clean, full-screen radar map with layers you can customize for storm tracking, hurricanes, or even
+        aviation weather.</p>
+      </li>
+      <li>
+        <a href="https://www.radarscope.app/" target="top">RadarScope</a>
+        <p>Professional-grade radar data, the kind spotters and chasers use. More detail than most people need,
+        but wonderful if you want to dig in.</p>
+      </li>
+      <li>
+        <a href="https://www.wxfront.com/" target="top">WeatherFront</a>
+        <p>Available for iOS and Android, and a favorite for the model-and-radar-obsessed: super-res dual-pol
+        radar, GOES-19 satellite, and access to HRRR, GFS, RRFS, NAM, and ECMWF model data, plus NWS watches and
+        warnings.</p>
+      </li>
+      <li>
+        <a href="https://www.radaromega.com/" target="top">RadarOmega</a>
+        <p>Another storm-tracking heavy hitter, with single-site radar from the US, Canada, Germany, Australia,
+        and South Korea, plus lightning detection and 3D radar viewing. iOS, Android, and even a desktop version
+        for Windows/macOS/Linux.</p>
+      </li>
+      <li>
+        <a href="https://www.accuweather.com/en/apps" target="top">AccuWeather</a>
+        <p>Detailed forecasts with minute-by-minute precipitation predictions and real-time severe weather
+        alerts.</p>
+      </li>
+      <li>
+        <a href="https://weather.com/apps" target="top">The Weather Channel</a>
+        <p>A solid free option with broad coverage--radar, alerts, and standard forecasts--if you just want one
+        reliable app.</p>
+      </li>
+      <li>
+        <a href="https://carrotweather.app/" target="top">CARROT Weather</a>
+        <p>All the forecast data you'd expect, wrapped in a sarcastic, personality-driven interface. Not for
+        everyone, but it makes checking the weather kind of fun.</p>
+      </li>
+    </ul>
+  </section>
+
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+
+  <section>
+    <h2>Severe Weather Alerts</h2>
+    <p class="section-sub">Because sometimes you need to know before the sirens go off.</p>
+    <ul class="link-list">
+      <li>
+        <a href="https://maxalert.net/" target="top">Max Velocity Weather</a>
+        <p>My personal favorite for severe weather notifications. An actual recording made by Max himself will
+        call you once he deems that your location is in danger. I'm fortunate to live in an area with a good
+        warning system, but I have gotten Max's calls before the tornado sirens go off. Costs about $15/year
+        and worth every penny if you live in a high-risk area.</p>
+      </li>
+      <li>
+        <a href="https://www.weatherbug.com/download" target="top">WeatherBug</a>
+        <p>Free severe weather alerts backed by an extensive network of weather stations.</p>
+      </li>
+      <li>
+        <a href="https://codered.crisis24.com/lp/mobile-alert-app-download" target="top">CodeRED</a>
+        <p>Free, and used by 10,000+ local governments to send emergency notifications--severe weather warnings,
+        evacuation orders, boil water notices, and the like--straight to your phone. You'll need to sign up
+        through your own city or county to actually receive alerts for your area.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="moon-divider" aria-hidden="true">☽ ☾ ☽</div>
+  <p>Reading the sky, one front yard at a time.</p>
+</footer>
+
+<script src="nav.js" defer></script>
+</body>
+</html>
