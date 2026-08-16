@@ -397,3 +397,6 @@ section > p.section-sub {
 
 /* ---------- Footer ---------- */
 footer { text-align: center; padding: 3rem 1.5rem 4rem; color: var(--text-400); font-size: 0.85rem; }
+footer p.contact { margin-top: 0.75rem; }
+footer a { color: var(--brass-300); text-decoration: none; border-bottom: 1px solid rgba(224, 194, 115, 0.4); }
+footer a:hover { color: var(--brass-500); }
