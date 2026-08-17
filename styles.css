@@ -325,6 +325,29 @@ section > p.section-sub {
   font-size: 0.92rem;
 }
 
+/* ---------- Photo feature (centered image + caption) ---------- */
+.photo-feature {
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+.photo-feature img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid rgba(199, 154, 59, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+.photo-feature figcaption {
+  margin-top: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-100);
+}
+.photo-feature:last-child { margin-bottom: 0; }
+
 /* ---------- Weather / instrument panel ---------- */
 .instrument-panel {
   background: var(--ink-800);
