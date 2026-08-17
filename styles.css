@@ -324,6 +324,8 @@ section > p.section-sub {
   color: var(--text-400);
   font-size: 0.92rem;
 }
+.link-list .cover-link { display: block; text-align: center; }
+.link-list .cover-link img { display: inline-block; }
 
 /* ---------- Photo feature (centered image + caption) ---------- */
 .photo-feature {
